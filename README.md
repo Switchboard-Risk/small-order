@@ -6,6 +6,9 @@ through their lifecycle, and watch stock get reserved and drawn down.
 
 ## Requirements
 
+Running the app is optional — see [Before the interview](#before-the-interview).
+If you'd like to run it, you need:
+
 - Ruby 3.2 or newer
 - Bundler
 
@@ -110,11 +113,18 @@ Persistence & coordination:
 This repo is the codebase we'll work in during your interview. The interview is a
 practical session: we'll work through the app together and see how you work and
 think through problems. We'll hand you the tasks when we meet, so please spend some
-time with the app beforehand so you already know how it works and where things live.
+time with the code beforehand so you already know how it works and where things live.
 
 **You don't need to know Ruby.** The codebase is small and plain, and we care about
 how you navigate an unfamiliar codebase, make decisions, and verify your work — not
 about language trivia.
+
+**You don't need to run it.** This isn't a test of installing Ruby. We won't be
+running the command line during the interview, and you won't need to either. If
+`bundle install` works on your machine, great — running the app and the specs is one
+way to see how it behaves. If it doesn't, don't spend time on it; reading the code is
+enough. The command line is a tool you can use if it helps, not a requirement, now or
+during the interview.
 
 **Use your normal workflow.** We want to see how you actually work, including your
 AI tools. Use whatever editor, terminal, and assistants you'd normally reach for, both
@@ -122,12 +132,11 @@ while getting familiar and during the interview itself.
 
 A few ways to get oriented:
 
-- Run `bundle install`, then `bin/orders catalog`, `bin/orders list`, and
-  `bin/orders show ID` to see what's already in the store.
-- Walk an order through its lifecycle with `create`, `add`, `submit`, `pay`, and
-  `fulfill`, and watch the catalog change.
-- Run `bundle exec rspec` and skim the specs to see what's covered.
-- Read through `lib/` — it's small.
+- Read through `lib/` — it's small. Start with `lib/order.rb` and
+  `lib/order_service.rb`.
+- Skim the specs in `spec/` to see what's covered.
+- If you have Ruby: run `bundle install`, then `bin/orders catalog`,
+  `bin/orders list`, and `bin/orders show ID` to see what's already in the store,
+  and walk an order through `create`, `add`, `submit`, `pay`, and `fulfill`.
 
-There's nothing to submit ahead of time. Just have the app set up and running before
-our chat.
+There's nothing to submit ahead of time.
