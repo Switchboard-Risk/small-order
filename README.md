@@ -100,3 +100,21 @@ Persistence & coordination:
 - `lib/order_service.rb` — runs each stock-touching transition (submit/cancel/fulfill)
   and its persistence inside one SQLite transaction, so the order and the affected
   products commit together or not at all.
+
+## Before the interview
+
+This repo is the codebase we'll work in during your interview. Please spend some
+time with it beforehand so that, when we hand you a task, you already know how the
+app works and where things live.
+
+How you get familiar is up to you. Use whatever editor, terminal, and AI tools you
+normally reach for — the same goes for the interview itself. A few suggestions:
+
+- Run `bundle install`, then `bin/orders catalog`, `bin/orders list`, and
+  `bin/orders show ID` to see what's already in the store.
+- Walk an order through its lifecycle with `create`, `add`, `submit`, `pay`, and
+  `fulfill`, and watch the catalog change.
+- Run `bundle exec rspec` and skim the specs to see what's covered.
+- Read through `lib/` — it's small.
+
+There's nothing to submit ahead of time. We'll give you the tasks when we meet.
