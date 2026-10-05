@@ -103,12 +103,20 @@ Persistence & coordination:
 
 ## Before the interview
 
-This repo is the codebase we'll work in during your interview. Please spend some
-time with it beforehand so that, when we hand you a task, you already know how the
-app works and where things live.
+This repo is the codebase we'll work in during your interview. The interview is a
+practical session: we'll work through the app together and see how you work and
+think through problems. We'll hand you the tasks when we meet, so please spend some
+time with the app beforehand so you already know how it works and where things live.
 
-How you get familiar is up to you. Use whatever editor, terminal, and AI tools you
-normally reach for — the same goes for the interview itself. A few suggestions:
+**You don't need to know Ruby.** The codebase is small and plain, and we care about
+how you navigate an unfamiliar codebase, make decisions, and verify your work — not
+about language trivia.
+
+**Use your normal workflow.** We want to see how you actually work, including your
+AI tools. Use whatever editor, terminal, and assistants you'd normally reach for, both
+while getting familiar and during the interview itself.
+
+A few ways to get oriented:
 
 - Run `bundle install`, then `bin/orders catalog`, `bin/orders list`, and
   `bin/orders show ID` to see what's already in the store.
@@ -117,4 +125,5 @@ normally reach for — the same goes for the interview itself. A few suggestions
 - Run `bundle exec rspec` and skim the specs to see what's covered.
 - Read through `lib/` — it's small.
 
-There's nothing to submit ahead of time. We'll give you the tasks when we meet.
+There's nothing to submit ahead of time. Just have the app set up and running before
+our chat.
