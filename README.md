@@ -6,15 +6,19 @@ through their lifecycle, and watch stock get reserved and drawn down.
 
 ## Requirements
 
-- Ruby 3.2.5
+- Ruby 3.2 or newer
 - Bundler
 
-If you don't have Ruby, the easiest way to install it on macOS or Linux is via [rbenv](https://github.com/rbenv/rbenv) or [asdf](https://asdf-vm.com/):
+If you don't have Ruby, the easiest way to install it on macOS or Linux is via
+[rbenv](https://github.com/rbenv/rbenv) or [asdf](https://asdf-vm.com/):
 
 ```
-rbenv install 3.2.5     # or: asdf install ruby 3.2.5
+rbenv install 3.3.6     # or: asdf install ruby 3.3.6
 gem install bundler
 ```
+
+Any Ruby from 3.2 up works. The `sqlite3` gem ships precompiled for macOS and
+Linux, so `bundle install` needs no compiler or system SQLite.
 
 ## Setup
 
